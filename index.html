@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=" en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <main>
+        <section class="itinerary-planner">
+            <h2>Travel Itinerary Planner</h2>
+
+            <div class="container">
+                
+                <div class="search-container search-bar">
+                    <div class="search-box">
+                        <input type="text" id="sourceInput" placeholder="Source Station">
+                        <div id="sourceSuggestions" class="suggestions"></div>
+                    </div>
+                    <br>
+                    <div class="search-box search-bar">
+                        <input type="text" id="destinationInput" placeholder="Destination Station">
+                        <div id="destinationSuggestions" class="suggestions"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+                <label for="vehicle-type">Vehicle Type:</label>
+                <select id="vehicle-type" name="vehicle-type">
+                    <br>
+                    <option value="">Select Vehicle Type</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Car">Car</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Train">Train</option>
+                    <!-- Add more options here -->
+                </select>
+                <button type="submit"><a href="index6.html">Plan Itinerary</a></button>
+            </form>
+            
+        </section>
+    </main>
+    
+</body>
+</html>
