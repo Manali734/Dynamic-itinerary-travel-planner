@@ -1,0 +1,117 @@
+.boilerplate {
+    width: 20%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestion, .preference, .budget-planning, .routes, .weather-conditions, .local-events {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .suggestion:hover, .preference:hover, .budget-planning:hover, .routes:hover, .weather-conditions:hover, .local-events:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    /* Add a hover effect with a transition */
+    transition: background-color 0.3s ease;
+  }
+  
+  i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .main-content {
+    width: 80%;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .chatbot-interface {
+    margin-top: 20px;
+  }
+  
+  #user-input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #submit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #chatbot-response {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+  
+  .submit-feedback {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Add a hover effect with a transition */
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-feedback:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Media Queries */
+  
+  /* For desktop screens */
+  @media only screen and (min-width: 1200px) {
+    .boilerplate {
+      width: 25%;
+    }
+    .main-content {
+      width: 75%;
+    }
+  }
+  
+  /* For tablet screens */
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    .boilerplate {
+      width: 30%;
+    }
+    .main-content {
+      width: 70%;
+    }
+  }
+  
+  /* For mobile screens */
+  @media only screen and (max-width: 767px) {
+    .boilerplate {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+    .main-content {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+}
