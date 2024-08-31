@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navstyle.css">
+</head>
+<style>
+body {
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #0F3E57;
+            background-image: url('pexels-sebastian-palomino-933481-1955134.jpg');
+            
+        }
+        
+</style>
+
+    
+        <div id="menubar">
+            <div id="page1">
+                <nav>
+                    <img src="logo (1).png" alt="Logo" id="logo">
+                    <div id="nav-part2">
+                        <h4><a href="#">Home</a></h4>
+                        <h4><a href="#">About</a></h4>
+                        <h4><a href="#">Services</a></h4>
+                        <h4><a href="#">Contact</a></h4>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div <i class="fa fa-align-center" aria-hidden=" "></i>
+        <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+        <script src="https://mediafiles.botpress.cloud/21317819-3102-41c0-a579-ca434cf196fb/webchat/v2.1/config.js"></script>
+    </div>
+    <div class="main">
+        <div class="services" style="text-align: center;">OUR SERVICE</div>
+    <span style="color: aliceblue;"> Our travel planning services are designed to make your journeys seamless and enjoyable. We offer customized itineraries tailored to your preferences,expert recommendations on destinations and accommodations, and comprehensive support throughout your trip. This allows you to focus on making unforgettable memories. </b></span>
+    
+    <div class="container">
+        <div class="card">
+            <img src="preferencef (1).webp" alt="Preferences">
+            <div class="card-title">Preferences</div>
+            <div class="card-description">Our travel planning service puts your preferences at the forefront, crafting journeys that align with your unique interests and desires. Whether you prioritize luxury stays, budget-friendly options, adventure activities, or cultural experiences, we tailor every aspect of your trip to match your tastes. Share your travel goals with us, and we’ll ensure your itinerary reflects your ideal vacation experience.</div>
+        </div>
+        <div class="card">
+            <img src="Budgetplanning (1).jpg" alt="Budget Planning">
+            <div class="card-title">Budget Planning</div>
+            <div class="card-description">Our travel planning service expertly manages your budget to ensure a cost-effective yet memorable trip. We offer tailored recommendations that align with your financial goals, from affordable accommodations to value-for-money activities and dining options. By maximizing your budget, we help you enjoy a rich travel experience without overspending, so you can focus on making the most of your adventure.</div>
+        </div>
+        <div class="card">
+            <img src="weather.jfif (1).jpg" alt="Weather Conditions">
+            <div class="card-title">Weather Conditions</div>
+            <div class="card-description">Our travel planning service takes into account current and seasonal weather conditions to optimize your travel experience. We provide recommendations on the best times to visit destinations based on weather patterns, ensuring you enjoy favorable conditions and avoid any weather-related disruptions. Whether you’re seeking sunny beaches or winter escapes, we’ll help you plan your trip for perfect weather and maximum comfort.</div>
+        </div>
+        <div class="card">
+            <img src="chatbot1 (1).jpg" alt="Chatbot">
+            <div class="card-title">Chatbot</div>
+            <div class="card-description">Our intelligent chatbot is available 24/7 to assist with all your travel planning queries. Whether you need information on destinations, accommodations, itinerary suggestions, or travel tips, the chatbot provides instant, accurate answers and personalized advice. It streamlines your planning process, ensuring you get the information you need quickly and efficiently, making your travel experience smooth and stress-free.</div>
+        </div>
+    </div>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    </div>
+    <div class="planner">
+        <div class="itinerary-planner">
+            <h2>Travel Itinerary Planner</h2>
+
+            <div class="container">
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="sourceInput" placeholder="Source Station">
+                        <div id="sourceSuggestions" class="suggestions"></div>
+                    </div>
+                    <br>
+                    <div class="search-box">
+                        <input type="text" id="destinationInput" placeholder="Destination Station">
+                        <div id="destinationSuggestions" class="suggestions"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+                <label for="vehicle-type">Vehicle Type:</label>
+                <select id="vehicle-type" name="vehicle-type">
+                    <br>
+                    <option value="">Select Vehicle Type</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Car">Car</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Train">Train</option>
+                    <!-- Add more options here -->
+                </select>
+                <button type="submit" ><a href="index.html">Plan Itinerary</a></button> 
+            </form>
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>
